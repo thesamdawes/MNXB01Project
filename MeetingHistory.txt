@@ -1,0 +1,15 @@
+30/10/2020 Meeting
+[Attendees: Tom, Sam]
+
+Notes: 
+
+The initial bottleneck of the project will be in "cleansing" the files. 
+We had a look through the files and got an idea of what is required. 
+
+The plan formed as of today is basically as follows:
+
+(1) Complete the Root homeworks over the weekend.
+(2) Meet up as a group on Monday and delegate work between us all,
+however as mentioned, we can't really do a great deal until we all 
+have the ability to open and use the files.
+(3) Tom to set up a Github repository.
