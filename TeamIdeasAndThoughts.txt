@@ -1,0 +1,19 @@
+This file serves as a place where any member of the team can add thoughts
+and suggestions about what they want to do. Ideas may come up randomly
+and not in the meeting, which is why this file exists.
+
+(Sam)
+
+
+(Tom)
+- It would be good for the graphing file to have two different functions.
+Assume that the graphing file is called Grapher(). It would be good if Grapher
+upon being executed, would ask the user which columns they want to compare
+and graph.
+
+(Timothy)
+
+
+(Gustaf)
+
+
