@@ -1,7 +1,43 @@
-30/10/2020 Meeting
+Meeting Date: 02/11/2020
+Time: 16:30
 [Attendees: Tom, Sam]
 
-Notes: 
+Meeting Summary: 
+
+Discussed who's bash script should be used to cleanse the data for analysis.
+
+Concluded that Sam's BASH code was overall better received by grader, and
+hence he will clear up his code and cleanse the files. 
+
+In order to allow for Tom to work in-parallel, Tom will set up a script
+which takes a cleansed file as input and produces a graph which displays
+relevant data. 
+
+Do not want multiple files/functions to do the same thing. Ideally only
+one person writing the file that cleanses, one person writes the graph-
+plotting code.
+
+The following people have been delegated the following tasks:
+
+(Sam)
+- Work with BASH script from tutorial 3 in order to cleanse the raw data
+files that we've been given. 
+- Calculate the "average temperature" of Sweden through all documented
+years. 
+
+(Tom)
+- Write a root file which takes a cleansed file as an input and produces
+a graph. (Extra: Allow user to choose the axis' that they want to plot?)
+- Write a root file that finds the maximum recorded temperature of each
+year and plot the result. 
+
+------------------------------------------------------------------------
+
+Meeting Date: 30/10/2020
+Time: 15:15
+[Attendees: Tom, Sam]
+
+Meeting Summary: 
 
 The initial bottleneck of the project will be in "cleansing" the files. 
 We had a look through the files and got an idea of what is required. 
