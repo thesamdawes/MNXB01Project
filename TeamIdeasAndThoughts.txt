@@ -3,7 +3,17 @@ and suggestions about what they want to do. Ideas may come up randomly
 and not in the meeting, which is why this file exists.
 
 (Sam)
-
+- The file cleaner has been created, will upload shortly. The cleaner will first check
+if a input parameter has been given, then detemine whether the file exists.
+Next it determines whether this is one of the smhi files or the uppsala file
+based on whether or not it finds 'Datum'. From here it cleans the file, For the
+smhi files it is straightforward as a correction of homework 3. The uppsala file
+is in a different format and as such is converted to the same format as the cleaned
+smhi files. One potential worry is that while the smhi file has date in the form
+1999-01-01 the uppsala file will give the same date as 1999-1-1. Futhermore the 
+temperature in the uppsala file will display 0.4 as .4 . For the moment neither
+of these pose problems so I will leave them in this form for now and correct if 
+needed. - 02/11/2020
 
 (Tom)
 - It would be good for the graphing file to have two different functions.
