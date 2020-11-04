@@ -16,10 +16,18 @@ of these pose problems so I will leave them in this form for now and correct if
 needed. - 02/11/2020
 
 (Tom)
+- Yesterday I worked on the graphing code. The intention is to give the user the ability to
+choose what they're plotting against what. I've had a few negative thoughts about this though
+namely that it might be irritating for analysis. But will hold a meeting today and discuss
+with group what they think. It has only been tried on "play data" so far, so I'm slightly
+concerned about using it on "real" data -- we'll see what happens. I also acknowledge
+that it was probably a bad idea for me to not make a commit yesterday with the "so far"
+working code. I will definitely put the code on Github today. - 04/11/2020
+
 - It would be good for the graphing file to have two different functions.
 Assume that the graphing file is called Grapher(). It would be good if Grapher
 upon being executed, would ask the user which columns they want to compare
-and graph.
+and graph. - 02/11/2020
 
 (Timothy)
 
