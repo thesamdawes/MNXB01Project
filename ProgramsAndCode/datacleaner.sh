@@ -16,6 +16,8 @@ if [[ $status != 0 ]]; then
    exit 1;
 fi
 
+echo "Would you like datetimes and temperatures in two separate files?(y/n)"
+read ANS
  
 echo "Finding the first line containing 'Datum'..."
 STARTLINE=$(grep -n "Datum" ${DATAFILE} | cut -f1 -d:)
@@ -39,7 +41,7 @@ if [[ $STARTLINE == 1 ]]; then
 	
 	echo "Selecting only relevant columns and copying to new file rawdatafinal_${DATAFILE}"
 	cut -d " " -f 1-3 rawdata_${DATAFILE} >> rawdatafinal_${DATAFILE}
-	exit 0;
+
 else
 	
 	
@@ -54,8 +56,15 @@ else
 	echo "Substituting the ; with spaces, result in a final rawdatafinal_${DATAFILE}"
 	sed 's/;/ /g' rawdatanext_${DATAFILE} >> rawdatafinal_${DATAFILE}
 	rm rawdatanext_${DATAFILE}
-	
-	exit 0;
 
+fi
+if [[ $ANS == "y" ]]; then
+	echo "Now splitting original file rawdatafinal_${DATAFILE} into two files with date time (rawdatafinaldate_${DATAFILE}) and temperature (rawdatafinaltemp_${DATAFILE})"
+	cut -d " " -f 1-2 rawdatafinal_${DATAFILE} > rawdatafinaldate_${DATAFILE}
+	cut -d " " -f 3 rawdatafinal_${DATAFILE} > rawdatafinaltemp_${DATAFILE}
+	rm rawdatafinal_${DATAFILE} 
+	exit 0;
+else
+	exit 0;
 fi
 
