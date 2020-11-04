@@ -37,8 +37,12 @@ Assume that the graphing file is called Grapher(). It would be good if Grapher
 upon being executed, would ask the user which columns they want to compare
 and graph. - 02/11/2020
 
-(Timothy)
-- Checking GitHub repo
+(Tim)
+- Working on plotting the data
+- Able to plot data from 1995 - 2020 using TDatime Class
+- Want to use class TTimeStamp to plot data from 1995 and earlier 
+- Have plotter ignore column names, manually removing column names currently
+- Next begin analysis of the data histogram, standard dev, min max, etc
 
 (Gustaf)
 
