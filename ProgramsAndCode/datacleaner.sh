@@ -22,8 +22,14 @@ STARTLINE=$(grep -n "Datum" ${DATAFILE} | cut -f1 -d:)
 
 STARTLINE=$(( $STARTLINE + 1 ))
 
+echo "Adding headers to the file"
+
+echo "Date Time Temperature" > rawdatafinal_${DATAFILE}
+
 if [[ $STARTLINE == 1 ]]; then
+	
 	echo "'Datum' was not found this is the Uppsala file"
+	
 	echo "Turning time format into standard, resulting in rawdata_${DATAFILE}"
 	sed  's/  */-/' ${DATAFILE} > rawdata_${DATAFILE}
 	sed -i 's/  */-/' rawdata_${DATAFILE}
@@ -32,19 +38,23 @@ if [[ $STARTLINE == 1 ]]; then
 	sed -i 's/  */ 00:00:00 /' rawdata_${DATAFILE}
 	
 	echo "Selecting only relevant columns and copying to new file rawdatafinal_${DATAFILE}"
-	cut -d " " -f 1-3 rawdata_${DATAFILE} > rawdatafinal_${DATAFILE}
+	cut -d " " -f 1-3 rawdata_${DATAFILE} >> rawdatafinal_${DATAFILE}
 	exit 0;
 else
+	
+	
 	echo "Datum found, removing the first $STARTLINE lines and copying to new file rawdata_${DATAFILE} "
 	tail -n +$STARTLINE ${DATAFILE} > rawdata_${DATAFILE}
 
-	echo "Selecting only relevant columns and copying to new file rawdatafinal_${DATAFILE}"
-	cut -d ";" -f 1-3 rawdata_${DATAFILE} > rawdatafinal_${DATAFILE}
+	echo "Selecting only relevant columns and copying to new file"
+	cut -d ";" -f 1-3 rawdata_${DATAFILE} > rawdatanext_${DATAFILE}
 	echo "Deleteing rawdata_${DATAFILE}"
 	rm rawdata_${DATAFILE}
 
 	echo "Substituting the ; with spaces, result in a final rawdatafinal_${DATAFILE}"
-	sed -i 's/;/ /g' rawdatafinal_${DATAFILE}
+	sed 's/;/ /g' rawdatanext_${DATAFILE} >> rawdatafinal_${DATAFILE}
+	rm rawdatanext_${DATAFILE}
+	
 	exit 0;
 
 fi
