@@ -145,12 +145,15 @@ void AnalyseWeather() {
 	// Block #4.
 	// Now that the user has chosen the columns they want to plot, we plot them. 
 	
-
+	
 	
 	TGraph* ChosenGraph = new TGraph(fileName.c_str(), columnChoices.c_str());
-	
 	ChosenGraph->Draw();
 	
+	
+	
+	
+
 	file.close();
 }
 
