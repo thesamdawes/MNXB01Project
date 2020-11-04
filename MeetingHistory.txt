@@ -1,5 +1,44 @@
+Meeting Date: 04/11/2020
+Time: 14:30
+[Attendees: Tom, Sam, Gustaf, Tim]
+Meeting Duration: 4.5 Hours
+
+Meeting Summary
+
+Met as a group and discussed the problem. Found that there's a fundamental problem
+where Root does not easily handle dates. This means (bluntly put) that we are not
+going to be able to use any of the code Tom has been working on, as it was based on
+Root being able to easily recognise and handle "date" objects. 
+
+Despite an amendment (made by Sam) to the bash code allowing for headers to to 
+be used, the point still stands that we're not going to be able to plot directly by headers. 
+
+Gustaf has began work on plotting directly from the files, using parts of the code.
+All of the files have been cleansed in the same format. The decision was made that our
+group will focus on temperature. 
+
+Sam discussed what three points of analysis we want to make. 
+
+The following people have been assigned the following tasks:
+
+(Gustaf)
+- Working on getting the dates from the files to be processable. 
+- Will then work on graphing them.
+
+(Sam)
+- Considering different points of analysis that we could do.
+- Going to edit the BASH script to allow for columns to become part of their own files.
+
+(Tim) 
+- Working to get files processed, has mentioned that many files online typically
+consist of only two columns, so it would be good for the cleaner to be able to
+produce multiple files. Passed task to Sam.
+
+------------------------------------------------------------------------
+
 Meeting Date: 02/11/2020
 Time: 16:30
+Meeting Duration: 1.5 Hours
 [Attendees: Tom, Sam]
 
 Meeting Summary: 
@@ -35,6 +74,7 @@ year and plot the result.
 
 Meeting Date: 30/10/2020
 Time: 15:15
+Meeting Duration: 1.0 Hour
 [Attendees: Tom, Sam]
 
 Meeting Summary: 
