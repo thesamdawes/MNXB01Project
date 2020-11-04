@@ -3,6 +3,10 @@ and suggestions about what they want to do. Ideas may come up randomly
 and not in the meeting, which is why this file exists.
 
 (Sam)
+I have edited my cleaner to include headers for the different columns including date,
+time and temperature. This is to aid Tom in his graphing code as they require headers to work.
+I am now trying to aid in the finding of a way to graph dates. - 04/11/202
+
 - The file cleaner has been created, will upload shortly. The cleaner will first check
 if a input parameter has been given, then detemine whether the file exists.
 Next it determines whether this is one of the smhi files or the uppsala file
@@ -30,7 +34,7 @@ upon being executed, would ask the user which columns they want to compare
 and graph. - 02/11/2020
 
 (Timothy)
-
+- Checking GitHub repo
 
 (Gustaf)
 
