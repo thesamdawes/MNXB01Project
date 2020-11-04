@@ -3,9 +3,13 @@ and suggestions about what they want to do. Ideas may come up randomly
 and not in the meeting, which is why this file exists.
 
 (Sam)
-I have edited my cleaner to include headers for the different columns including date,
+- I have further edited the cleaner so to comply with tim's request. The cleaner now
+prompts the user to ask if they would like the date and time in a separate file to the
+temperatures and splits them accordingly. - 04/11/2020
+
+- I have edited my cleaner to include headers for the different columns including date,
 time and temperature. This is to aid Tom in his graphing code as they require headers to work.
-I am now trying to aid in the finding of a way to graph dates. - 04/11/202
+I am now trying to aid in the finding of a way to graph dates. - 04/11/2020
 
 - The file cleaner has been created, will upload shortly. The cleaner will first check
 if a input parameter has been given, then detemine whether the file exists.
