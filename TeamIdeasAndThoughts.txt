@@ -39,6 +39,9 @@ and graph. - 02/11/2020
 
 (Timothy)
 - Checking GitHub repo
+- Testing if I can push
+- Yesterday worked on plotting data
+- Created code that crates function that calls town
 
 (Gustaf)
 
