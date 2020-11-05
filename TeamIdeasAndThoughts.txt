@@ -3,9 +3,17 @@ and suggestions about what they want to do. Ideas may come up randomly
 and not in the meeting, which is why this file exists.
 
 (Sam)
-I have edited my cleaner to include headers for the different columns including date,
+-Currently attempting to change the Weather analysis code that that it can compare two
+years on the same graph, this is to aid in my analysis to see if there is any noticable
+change in the temperature after the Eyjafjallajökull volcanic eruption in 2010. - 05/11/2020
+
+- I have changed the cleaner file so that it prompts the user weither or not they would
+like the datetime and temperatures in different files, this is to help tim in his
+program. - 04/11/2020
+
+- I have edited my cleaner to include headers for the different columns including date,
 time and temperature. This is to aid Tom in his graphing code as they require headers to work.
-I am now trying to aid in the finding of a way to graph dates. - 04/11/202
+I am now trying to aid in the finding of a way to graph dates. - 04/11/2020
 
 - The file cleaner has been created, will upload shortly. The cleaner will first check
 if a input parameter has been given, then detemine whether the file exists.
