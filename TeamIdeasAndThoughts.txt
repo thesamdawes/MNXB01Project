@@ -3,6 +3,10 @@ and suggestions about what they want to do. Ideas may come up randomly
 and not in the meeting, which is why this file exists.
 
 (Sam)
+-Currently attempting to change the Weather analysis code that that it can compare two
+years on the same graph, this is to aid in my analysis to see if there is any noticable
+change in the temperature after the Eyjafjallajökull volcanic eruption in 2010. - 05/11/2020
+
 - I have further edited the cleaner so to comply with tim's request. The cleaner now
 prompts the user to ask if they would like the date and time in a separate file to the
 temperatures and splits them accordingly. - 04/11/2020
