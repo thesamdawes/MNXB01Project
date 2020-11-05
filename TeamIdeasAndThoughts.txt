@@ -24,7 +24,21 @@ of these pose problems so I will leave them in this form for now and correct if
 needed. - 02/11/2020
 
 (Tom)
-- Yesterday I worked on the graphing code. The intention is to give the user the ability to
+
+-> The code that I've worked on is essentially (and unfortunately) useless because
+it is built around the TGraph function, which isn't what we want to use. It would be
+salvagable except there doesn't seem to be a direct way to plot columns from a file easily
+using TGraph functionality. For this reason, two of my colleagues (Gustaf and Tim) are
+experimenting with plotting the data using vectors and other methods. Hopefully they have
+more success than I did. Due to new course commitments, I'm unable to work much on the code
+today, however I'm hoping to contribute tomorrow morning in the report for the code.
+
+Our aim is to come up with three points of analysis, and write them neatly into a report.
+I will write this report tomorrow morning, before our presentation. I will
+create the outline of this report in our meeting later today, and upload the first
+commit of it if I can find a way to wget it into the linux filespace. - 05/11/2020
+
+-> Yesterday I worked on the graphing code. The intention is to give the user the ability to
 choose what they're plotting against what. I've had a few negative thoughts about this though
 namely that it might be irritating for analysis. But will hold a meeting today and discuss
 with group what they think. It has only been tried on "play data" so far, so I'm slightly
@@ -32,7 +46,7 @@ concerned about using it on "real" data -- we'll see what happens. I also acknow
 that it was probably a bad idea for me to not make a commit yesterday with the "so far"
 working code. I will definitely put the code on Github today. - 04/11/2020
 
-- It would be good for the graphing file to have two different functions.
+-> It would be good for the graphing file to have two different functions.
 Assume that the graphing file is called Grapher(). It would be good if Grapher
 upon being executed, would ask the user which columns they want to compare
 and graph. - 02/11/2020
