@@ -14,14 +14,19 @@ Tom's Code
 Program 1: TTreeAnalyser.C
 
 (1) Open Root
+
 (2) .L TTreeAnalyser.C++
+
 (3) This will compile the script. If it doesn't, you might be in the 
 wrong directory. Change to ProgramsAndCode to make it simple.
+
 (4) Once the code has compiled, use the function "PlotTempForFile()"
+
 (5) You will be prompted for the file you wish to see all temperatures of.
 Provided that a correct directory/file is given (see CleansedData for filenames)
 it will then provide a histogram of all the temperatures, as well as the
 mean and standard deviation. 
+
 (6) You can reproduce the plot in the report by using the CleansedLuleaData.csv.
 
 Program 2: WeatherAnalyser.C
