@@ -54,23 +54,22 @@ TCanvas* c1 = new TCanvas("c1", "histogram", 900, 600);
 h1->SetLineColor(1);
 h2->SetLineColor(2);
 
-auto mygaus1 = new TF1("mygaus1","gaus");
-auto mygaus2 = new TF1("mygaus2","gaus");
-mygaus1->SetLineColor(1);
-mygaus2->SetLineColor(2);
+auto myfit1 = new TF1("myfit1","pol4");
+auto myfit2 = new TF1("myfit2","pol4");
+myfit1->SetLineColor(1);
+myfit2->SetLineColor(2);
 
-h1->Fit("mygaus1");
+h1->Fit("myfit1");
 h1->SetLineStyle(9);
-h2->Fit("mygaus2");
+h2->Fit("myfit2");
 h2->SetLineStyle(9);
 
 TLegend* legend = new TLegend(0.1,0.7,0.3,0.9,"Data Legend");
 legend->AddEntry(h1,Form("Hist %d",year1),"l");
 legend->AddEntry(h2,Form("Hist %d",year2),"l");
-legend->AddEntry(mygaus1,Form("Fit %d",year1),"l");
-legend->AddEntry(mygaus2,Form("Fit %d",year2),"l");
+legend->AddEntry(myfit1,Form("Fit %d",year1),"l");
+legend->AddEntry(myfit2,Form("Fit %d",year2),"l");
 
- 
 h1->Draw();
 h2->Draw("same");
 legend->Draw();
