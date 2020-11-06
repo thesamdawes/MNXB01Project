@@ -12,7 +12,7 @@
 
 using namespace std;
 
-void TempHist(Int_t year1, Int_t year2, Int_t hour, const char* place){
+void TempCompHist(Int_t year1, Int_t year2, Int_t hour, const char* place){
 
 string fileName = Form("../HistData/Data%s.csv", place);
 
