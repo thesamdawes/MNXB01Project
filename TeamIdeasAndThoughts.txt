@@ -37,11 +37,14 @@ Assume that the graphing file is called Grapher(). It would be good if Grapher
 upon being executed, would ask the user which columns they want to compare
 and graph. - 02/11/2020
 
-(Timothy)
+(Tim)
 - Checking GitHub repo
 - Testing if I can push
 - Yesterday worked on plotting data
 - Created code that crates function that calls town
+- Created TempCompHist.C that allows two years weather data to be plotted as hist gives them a fit and compares to the two years. Allows comparison between different years to see how global warming has affected different places in Sweden.
+- Did some stuff on the report.
+- Created a hist folder that has the data that is used for TempCompHist.C file.
 
 (Gustaf)
 
