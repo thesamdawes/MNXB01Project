@@ -29,6 +29,12 @@ needed. - 02/11/2020
 
 (Tom)
 
+-> I have made new code which utilises TTree. Unfortunately our group has fractured
+somewhat into four different codes, however this was a predictable outcome when
+the initial code failed. In a "more time" situation, we would have worked on condensing
+all of our codes into something more general, which is something that Sam and
+Gustaf discussed yesterday. - 06/11/2020
+
 -> The code that I've worked on is essentially (and unfortunately) useless because
 it is built around the TGraph function, which isn't what we want to use. It would be
 salvagable except there doesn't seem to be a direct way to plot columns from a file easily
